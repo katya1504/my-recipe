@@ -2,37 +2,118 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.spices {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container__link{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  width: 300px;
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button{
+  background: transparent;
+  border: none;
+}
+
+.image{
+border: 11px solid rgb(180, 179, 179);
+}
+
+h1{
+  color: rgb(208, 62, 62);
+  font-family: 'Indie Flower', cursive;
+  font-size: 80px;
+  text-shadow: 3px 3px 3px #101010;
+}
+
+h2{
+  font-family: 'Indie Flower', cursive;
+  font-size:40px;
+  color: rgb(183, 183, 183);
+  text-shadow: 3px 3px 2px #080808;
+}
+
+h3{
+  font-family: 'Indie Flower', cursive;
+  font-size: 15x;
+  color: rgb(41, 41, 41);
+  line-height: 1mm;
+  margin: 23px;
+}
+
+h4{
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+}
+
+li{
+  font-size: 15px;
+  font-weight: 600px;
+  color: rgb(48, 48, 48);
+  list-style: none;
+}
+
+label{
+  font-family: 'Indie Flower', cursive;
+}
+
+li{
+  background: rgba(251, 243, 173, 0.5);
+padding: 5px;
+}
+
+form{
+  line-height: 1mm;
+}
+
+
+@media all and (max-width:800px){
+  h1{
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input{
+    width: 150px;
+    height:25px;
   }
+  
+  h2{
+    font-size:16px;
+    text-shadow: 1px 1px 1px #080808;
+  }
+  
+  h3{
+    font-size: 13px;
+  }
+  
+  h4{
+    font-size: 13px;
+  }
+  
+  li{
+    font-size: 8px;
+  }
+  
+  
+  li{
+  padding: 7px;
+  }
+
+  .image{
+width: 200px;
+    }
+
 }
