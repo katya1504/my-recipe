@@ -57,8 +57,8 @@ setMySearch(e.target.value)
 </div>
 
 <div>
-{myRecipes.map(element => (
-  <Recipe label={element.recipe.label}
+{myRecipes.map((element,index)=> (
+  <Recipe key={index} label={element.recipe.label}
   image={element.recipe.image}
   ingredients={element.recipe.ingredientLines}
   cuisineType={element.recipe.cuisineType}

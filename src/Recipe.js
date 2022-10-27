@@ -12,8 +12,8 @@ return(<div>
 </div>
 
 <ul>
-    {ingredients.map(ingredient=>(
-        <li>{ingredient}</li>
+    {ingredients.map((ingredient, index)=>(
+        <li key={index}>{ingredient}</li>
     ))}
 </ul>
 
