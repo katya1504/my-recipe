@@ -48,8 +48,8 @@ setMySearch(e.target.value)
   <div className='container'>
   <div className='container__link'>
 <form onSubmit={finalSearch}>
-  <h3>Поиск</h3>
-  <input className='search' placeholder='Поиск...' onChange={myRecipeSearch} value={mySearch}>
+  <h3>Search</h3>
+  <input className='search' placeholder='Search...' onChange={myRecipeSearch} value={mySearch}>
   </input>
   <button><img src={icon} alt='icon' width='60px'></img></button>
   </form>
